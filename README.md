@@ -1,11 +1,11 @@
-# d
+# sdfs
   ## Description
-  d
+  sdf
   ## Installation
-  d
+  dsf
   ## Credit
-  d
-  // ## License
-  // function renderLicenseBadge(license) {} d function renderLicenseLink(license) {}
+  sdfs
+  ## License
+  undefined N/A undefined
   ## Features
-  d
+  ok

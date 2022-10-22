@@ -73,7 +73,7 @@ function renderLicenseBadge(license) {
     return `![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)`;
   }
   else {
-    console.log('Error');
+    console.log('Looks like we either cannot find a badge icon to that license or you did not choose one. No Worries! We will just leave that blank!');
     return '';
   }
 }
@@ -152,7 +152,7 @@ function renderLicenseLink(license) {
     return `(https://opensource.org/licenses/Zlib)`;
   }
   else {
-    console.log('Error');
+    console.log('Looks like we either cannot find a link to that license or you did not choose one. No Worries! We will just leave that blank!');
     return '';
   }
 }
@@ -166,28 +166,28 @@ function renderLicenseSection(license) {
 function generateMarkdown(answers) {
   return `# ${renderLicenseBadge(answers.license)} ${answers.title}
   ## Table of Contents
-  1. [Description](#Description)\n
-  2. [Installation](#Installation)\n
-  3. [Usage](#Usage)\n
-  4. [License](#License)\n
-  5. [Contributing](#Contributing)\n
-  6. [Tests](#Tests)\n
-  7. [Questions](#Questions)\n
-  ## Description <a name="Description"></a>
+  1. **[Description](#description)**<br>
+  2. **[Installation](#installation)**<br>
+  3. **[Usage](#usage)**<br>
+  4. **[License](#license)**<br>
+  5. **[Contributing](#contributing)**<br>
+  6. **[Tests](#tests)**<br>
+  7. **[Questions](#questions)**<br>
+  ## Description
   ${answers.description}
-  ## Installation <a name="Installation"></a>
+  ## Installation
   ${answers.installation}
-  ## Usage <a name="Usage"></a>
+  ## Usage
   ${answers.usage}
-  ## License <a name="License"></a>
+  ## License
   ${renderLicenseSection(answers.license)} ${renderLicenseLink(answers.license)}
-  ## Contributing <a name="Contributing"></a>
+  ## Contributing
   ${answers.contributing}
-  ## Tests <a name="Tests"></a>
+  ## Tests
   ${answers.tests}
-  ## Questions <a name="Questions"></a>
-  For additional questions, please contact:\n
-  GitHub: ${answers.username}\n
+  ## Questions
+  For additional questions, please contact:<br>
+  GitHub: https://github.com/${answers.username}<br>
   Email: ${answers.email}`;
 }
 

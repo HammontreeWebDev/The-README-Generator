@@ -13,7 +13,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Write a short description of what this project accomplishes.'
+        message: 'Please provide a description of this project.'
     },
     {
         type: 'input',
@@ -22,8 +22,18 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'credit',
-        message: 'If you had any collaborators, please list them here (If none, type "N/A"):'
+        name: 'usage',
+        message: 'Explain how someone would use this application.'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'What guidlines are there for developers to contribute to this project?'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'What steps can be taken to test this apps functionality?'
     },
     {
         type: 'checkbox',
@@ -33,10 +43,14 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'features',
-        message: 'If your project has any special features, please list them here:'
+        name: 'username',
+        message: 'What is your GitHub username?'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your business email?'
     }
-
 ];
 
 // TODO: Create a function to write README file

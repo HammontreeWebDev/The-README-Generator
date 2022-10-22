@@ -1,13 +1,20 @@
-# no
-  ## Description
-  ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)
+# The README Generator
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-  no
+  ## Description
+  This project makes it easy for you and I to generate a well polished and professional looking README.
+  ## Table of Contents
   ## Installation
-  no
-  ## Credit
-  no
+  Fork this repository and clone it to your local machine. Then type npm install in an integrated terminal.
+  ## Usage
+  This application was designed to be used in the CLI.
   ## License
-  BSD 3-Clause License (https://opensource.org/licenses/BSD-3-Clause)
-  ## Features
-  no
+  The MIT License (https://opensource.org/licenses/MIT)
+  ## Contributing
+  If you would like to contribute to this project, simply contact me to be added to a list of collaborators
+  ## Tests
+  Node index.js or Node start in CLI.
+  ## Questions
+  For additional questions, please contact:
+  GitHub: HammontreeWebDev
+  Email: hammontreewebdev@gmail.com

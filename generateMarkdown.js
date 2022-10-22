@@ -1,6 +1,4 @@
 // Checks for user choice on license and assigns the badge to be displayed (if any) based on that choice
-
-// choices: |||'The zlib/libpng License']
 function renderLicenseBadge(license) {
   if (license == 'Apache 2.0 License') {
     return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
@@ -167,17 +165,24 @@ function renderLicenseSection(license) {
 // Function to create the markdown for the readme
 function generateMarkdown(answers) {
   return `# ${answers.title}
-  ## Description
   ${renderLicenseBadge(answers.license)}\n
+  ## Description
   ${answers.description}
+  ## Table of Contents
   ## Installation
   ${answers.installation}
-  ## Credit
-  ${answers.credit}
+  ## Usage
+  ${answers.usage}
   ## License
   ${renderLicenseSection(answers.license)} ${renderLicenseLink(answers.license)}
-  ## Features
-  ${answers.features}`;
+  ## Contributing
+  ${answers.contributing}
+  ## Tests
+  ${answers.tests}
+  ## Questions
+  For additional questions, please contact:\n
+  GitHub: ${answers.username}\n
+  Email: ${answers.email}`;
 }
 
 module.exports = generateMarkdown;

@@ -1,6 +1,6 @@
 // Checks for user choice on license and assigns the badge to be displayed (if any) based on that choice
 
-// choices: |||'GNU GPL v3','GNU GPL v2','GNU AGPL v3','GNU LGPL v3','GNU FDL v1.3','IBM Public License Version 1.0','The MIT License','Mozilla Public License 2.0','Attribution License (BY)','Open Database License (ODbL)','Public Domain Dedication and License (PDDL)','The Perl License','The Artistic License 2.0','The zlib/libpng License']
+// choices: |||'The zlib/libpng License']
 function renderLicenseBadge(license) {
   if (license == 'Apache 2.0 License') {
     return `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
@@ -31,6 +31,48 @@ function renderLicenseBadge(license) {
   }
   else if (license == 'Eclipse Public License 1.0') {
     return `![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)`;
+  }
+  else if (license == 'GNU GPL v3') {
+    return `![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)`;
+  }
+  else if (license == 'GNU GPL v2') {
+    return `![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)`;
+  }
+  else if (license == 'GNU AGPL v3') {
+    return `![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)`;
+  }
+  else if (license == 'GNU LGPL v3') {
+    return `![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)`;
+  }
+  else if (license == 'GNU FDL v1.3') {
+    return `![License: FDL 1.3](https://img.shields.io/badge/License-FDL%20v1.3-blue.svg)`;
+  }
+  else if (license == 'IBM Public License Version 1.0') {
+    return `![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)`;
+  }
+  else if (license == 'The MIT License') {
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+  }
+  else if (license == 'Mozilla Public License 2.0') {
+    return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)`;
+  }
+  else if (license == 'Attribution License (BY)') {
+    return `![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)`;
+  }
+  else if (license == 'Open Database License (ODbL)') {
+    return `![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)`;
+  }
+  else if (license == 'Public Domain Dedication and License (PDDL)') {
+    return `![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)`;
+  }
+  else if (license == 'The Perl License') {
+    return `![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)`;
+  }
+  else if (license == 'The Artistic License 2.0') {
+    return `![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg)`;
+  }
+  else if (license == 'The zlib/libpng License') {
+    return `![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)`;
   }
   else {
     console.log('Error');
@@ -68,6 +110,48 @@ function renderLicenseLink(license) {
   }
   else if (license == 'Eclipse Public License 1.0') {
     return `(https://opensource.org/licenses/EPL-1.0)`;
+  }
+  else if (license == 'GNU GPL v3') {
+    return `(https://www.gnu.org/licenses/gpl-3.0)`;
+  }
+  else if (license == 'GNU GPL v2') {
+    return `(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`;
+  }
+  else if (license == 'GNU AGPL v3') {
+    return `(https://www.gnu.org/licenses/agpl-3.0)`;
+  }
+  else if (license == 'GNU LGPL v3') {
+    return `(https://www.gnu.org/licenses/lgpl-3.0)`;
+  }
+  else if (license == 'GNU FDL v1.3') {
+    return `(https://www.gnu.org/licenses/fdl-1.3)`;
+  }
+  else if (license == 'IBM Public License Version 1.0') {
+    return `(https://opensource.org/licenses/IPL-1.0)`;
+  }
+  else if (license == 'The MIT License') {
+    return `(https://opensource.org/licenses/MIT)`;
+  }
+  else if (license == 'Mozilla Public License 2.0') {
+    return `(https://opensource.org/licenses/MPL-2.0)`;
+  }
+  else if (license == 'Attribution License (BY)') {
+    return `(https://opendatacommons.org/licenses/by/)`;
+  }
+  else if (license == 'Open Database License (ODbL)') {
+    return `(https://opendatacommons.org/licenses/odbl/)`;
+  }
+  else if (license == 'Public Domain Dedication and License (PDDL)') {
+    return `(https://opendatacommons.org/licenses/pddl/)`;
+  }
+  else if (license == 'The Perl License') {
+    return `(https://opensource.org/licenses/Artistic-2.0)`;
+  }
+  else if (license == 'The Artistic License 2.0') {
+    return `(https://opensource.org/licenses/Artistic-2.0)`;
+  }
+  else if (license == 'The zlib/libpng License') {
+    return `(https://opensource.org/licenses/Zlib)`;
   }
   else {
     console.log('Error');

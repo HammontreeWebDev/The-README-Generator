@@ -4,7 +4,8 @@
   "description": "json information for node app",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "node index.js"
   },
   "author": "Kaileb Hammontree",
   "license": "ISC",

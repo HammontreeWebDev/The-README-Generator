@@ -12,6 +12,10 @@
   ## Installation
   Fork this repository to your GitHub page and clone it to your local machine. Once you have it open in your favorite code editor (mine is VS Code), then  you can run npm install to install the required dependancies for the application to run properly.
   ## Usage
+  Watch this tutorial video on how to properly use the README Generator:<br>
+  <br>
+  https://watch.screencastify.com/v/TjSoBWb338upGy66EAuN<br>
+  <br>
   To use this application, after installation, simply type "node index.js" or "npm start" into an integrated terminal. Then, answer the questions and a README will be generated for you!
   ## License
   The MIT License (https://opensource.org/licenses/MIT)
